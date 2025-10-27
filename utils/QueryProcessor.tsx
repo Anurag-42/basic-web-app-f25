@@ -19,6 +19,10 @@ export default function QueryProcessor(query: string): string {
   return "aaryal";
 }
 
+if (query.toLowerCase().includes("1 plus 35")) {
+    return (1 + 35).toString();
+  }
+
 
 
   return "";

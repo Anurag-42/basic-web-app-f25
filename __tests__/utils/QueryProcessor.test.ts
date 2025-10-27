@@ -29,4 +29,9 @@ describe("QueryProcessor", () => {
     test('responds to "What is your Andrew ID?" correctly', () => {
   expect(QueryProcessor("What is your Andrew ID?")).toBe("aaryal");
 });
+
+test('responds to "What is 1 plus 35?" correctly', () => {
+  const response = QueryProcessor("What is 1 plus 35?");
+  expect(response).toBe("36");
+});
 });
